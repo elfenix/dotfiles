@@ -1,0 +1,49 @@
+#!/usr/bin/env python3
+import os
+import shlex
+from pathlib import Path
+from typing import List, Optional
+import argparse
+import json
+
+class EfxSession:
+    def __init__(self, cfg):
+        self.cmd = cfg.get('cmd', '/bin/bash --login')
+        self.title = cfg.get('title', 'System Shell')
+
+    def execute(self):
+        cmd_val = shlex.split(self.cmd)
+        os.execvp(cmd_val[0], cmd_val)
+
+class EfxConfig:
+    def __init__(self, cfg):
+        self._sessions = _attr_sessions(cfg)
+
+    def get_session(self, num: int) -> Optional[EfxSession]:
+        return self._sessions[num] if 0 <= num < len(self._sessions) else None
+
+def _load_config() -> EfxConfig:
+    json_site = (Path.home() / '.efx_site.json')
+    if not json_site.exists():
+        raise RuntimeError('No available configuration')
+    cfg = json.loads(json_site.read_text())
+    return EfxConfig(cfg)
+
+def _attr_sessions(cfg) -> List[EfxSession]:
+    return [EfxSession(x) for x in cfg.get('sessions', [])]
+
+def main():
+    parser = argparse.ArgumentParser(description='Site Information[Session]')
+    parser.add_argument('id', type=int, help='Session identifier')
+    args = parser.parse_args()
+    
+    cfg = _load_config()
+    session = cfg.get_session(args.id)
+    if not session:
+        raise RuntimeError('Invalid session id')
+    session.execute()
+
+    
+if __name__ == "__main__":
+    main()
+

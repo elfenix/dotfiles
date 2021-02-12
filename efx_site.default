@@ -1,0 +1,10 @@
+{ "sessions":
+    [
+        { "title": "System Shell",
+          "cmd": "/bin/bash --login"
+        },
+        { "title": "C Shell",
+          "cmd": "/bin/csh"
+        }
+    ]
+}
