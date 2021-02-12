@@ -6,6 +6,7 @@
 
 - link:
     ~/.bashrc: bashrc
+    ~/.profile: profile
     ~/.vimrc: vimrc
     ~/.config/kitty/kitty.conf: kitty.conf
     ~/.scripts: scripts
