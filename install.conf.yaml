@@ -4,13 +4,23 @@
 
 - clean: ['~']
 
+- create:
+    - ~/projects
+    - ~/.config/kitty
+    - ~/.local/share/fonts
+    - ~/.fonts
+
 - link:
     ~/.bashrc: bashrc
     ~/.profile: profile
     ~/.vimrc: vimrc
     ~/.config/kitty/kitty.conf: kitty.conf
     ~/.scripts: scripts
+    ~/.fonts/:
+        glob: true
+        path: resources/fonts/*.ttf
+        relink: true
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
-
+    - [fc-cache -f -v, Updating fonts]
