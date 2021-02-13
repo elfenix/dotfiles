@@ -6,6 +6,8 @@
 
 - create:
     - ~/projects
+    - ~/.vim/autoload
+    - ~/.vim/plugged
     - ~/.config/kitty
     - ~/.local/share/fonts
     - ~/.fonts
@@ -14,6 +16,7 @@
     ~/.bashrc: bashrc
     ~/.profile: profile
     ~/.vimrc: vimrc
+    ~/.vim/autoload/plug.vim: resources/vim/plug.vim
     ~/.config/kitty/kitty.conf: kitty.conf
     ~/.scripts: scripts
     ~/.fonts/:
