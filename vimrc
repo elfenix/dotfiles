@@ -3,7 +3,6 @@
 set nocompatible
 
 " ----- Color Table -----
-" XTerm Configured Color Table!
 hi x016_Grey0 ctermfg=16 guifg=#000000 "rgb=0,0,0
 hi x017_NavyBlue ctermfg=17 guifg=#00005f "rgb=0,0,95
 hi x018_DarkBlue ctermfg=18 guifg=#000087 "rgb=0,0,135
@@ -248,15 +247,6 @@ hi x255_Grey93 ctermfg=255 guifg=#eeeeee "rgb=238,238,238
 
 
 
-" ----- Plugins ------
-" Configure Vim plugin manager
-call plug#begin('~/.vim/plugged')
-
-Plug 'itchyny/lightline.vim'
-Plug 'tpope/vim-fugitive'
-Plug 'airblade/vim-gitgutter'
-
-call plug#end()
 
 
 " ----- Visual Behaviors

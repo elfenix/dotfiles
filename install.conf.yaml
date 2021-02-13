@@ -6,8 +6,6 @@
 
 - create:
     - ~/projects
-    - ~/.vim/autoload
-    - ~/.vim/plugged
     - ~/.config/kitty
     - ~/.local/share/fonts
     - ~/.fonts
@@ -16,7 +14,7 @@
     ~/.bashrc: bashrc
     ~/.profile: profile
     ~/.vimrc: vimrc
-    ~/.vim/autoload/plug.vim: resources/vim/plug.vim
+    ~/.vim: vim
     ~/.config/kitty/kitty.conf: kitty.conf
     ~/.scripts: scripts
     ~/.fonts/:
@@ -26,4 +24,5 @@
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
-    - [fc-cache -f -v, Updating fonts]
+    - [fc-cache -f -v, Updating fonts] 
+
