@@ -244,11 +244,6 @@ hi x253_Grey85 ctermfg=253 guifg=#dadada "rgb=218,218,218
 hi x254_Grey89 ctermfg=254 guifg=#e4e4e4 "rgb=228,228,228
 hi x255_Grey93 ctermfg=255 guifg=#eeeeee "rgb=238,238,238
 
-
-
-
-
-
 " ----- Visual Behaviors
 set laststatus=2           " Show status bar (lightbar)
 set noshowmode             " Hide mode (in lightbar)
@@ -258,7 +253,10 @@ set number                 " Show line numbers
 
 highlight clear SignColumn
 
+" ----- EditorConfig configuration
+let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
 
+" ----- LightLine Plugin Configuration
 " set lightline to include git-branch
 let g:lightline = {
       \ 'colorscheme': 'wombat',
