@@ -2,6 +2,10 @@
 " Enable basic vim behaviors
 set nocompatible
 
+" No more annoying pings!
+set visualbell
+
+
 " ----- Color Table -----
 hi x016_Grey0 ctermfg=16 guifg=#000000 "rgb=0,0,0
 hi x017_NavyBlue ctermfg=17 guifg=#00005f "rgb=0,0,95
@@ -278,6 +282,9 @@ let g:lightline = {
 set autoindent
 set backspace=indent,eol,start
 set smarttab
+
+" No wrapping please
+set nowrap
 
 
 " Just keep it DARK :D

@@ -13,8 +13,10 @@
 - link:
     ~/.bashrc: bashrc
     ~/.profile: profile
+    ~/.inputrc: inputrc
     ~/.vimrc: vimrc
     ~/.vim: vim
+    ~/.csirc: csirc
     ~/.config/kitty/kitty.conf: kitty.conf
     ~/.scripts: scripts
     ~/.fonts/:
