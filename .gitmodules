@@ -13,3 +13,6 @@
 [submodule "vim/pack/def/start/editorconfig"]
 	path = vim/pack/def/start/editorconfig
 	url = https://github.com/editorconfig/editorconfig-vim.git
+[submodule "zsh_files/powerlevel10k"]
+	path = zsh_files/powerlevel10k
+	url = https://github.com/romkatv/powerlevel10k.git

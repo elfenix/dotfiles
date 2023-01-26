@@ -11,6 +11,9 @@
     - ~/.fonts
 
 - link:
+    ~/.zshrc: zshrc
+    ~/.zsh_files: zsh_files
+    ~/.p10k.zsh: p10k.zsh
     ~/.bashrc: bashrc
     ~/.profile: profile
     ~/.inputrc: inputrc
@@ -25,6 +28,7 @@
         relink: true
 
 - shell:
+    - [git config --global alias.tree 'log --oneline --graph --decorate --all', Adding git alias for tree view]
     - [git submodule update --init --recursive, Installing submodules]
     - [fc-cache -f -v, Updating fonts] 
 
