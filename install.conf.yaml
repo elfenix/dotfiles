@@ -22,6 +22,8 @@
     ~/.csirc: csirc
     ~/.config/kitty/kitty.conf: kitty.conf
     ~/.scripts: scripts
+    ~/.tmux.conf: tmux.conf
+    ~/.tmux: dot.tmux
     ~/.fonts/:
         glob: true
         path: resources/fonts/*.ttf

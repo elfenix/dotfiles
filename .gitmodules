@@ -16,3 +16,12 @@
 [submodule "zsh_files/powerlevel10k"]
 	path = zsh_files/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k.git
+[submodule "tpm"]
+	path = dot.tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm.git
+[submodule "dot.tmux/plugins/tmux-power"]
+	path = dot.tmux/plugins/tmux-power
+	url = https://git::@github.com/wfxr/tmux-power
+[submodule "dot.tmux/plugins/tmux-sensible"]
+	path = dot.tmux/plugins/tmux-sensible
+	url = https://git::@github.com/tmux-plugins/tmux-sensible
