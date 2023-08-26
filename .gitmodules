@@ -7,9 +7,6 @@
 [submodule "vim/pack/def/start/vim-fugitive"]
 	path = vim/pack/def/start/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive
-[submodule "vim/pack/def/start/vim-gitgutter"]
-	path = vim/pack/def/start/vim-gitgutter
-	url = https://github.com/airblade/vim-gitgutter
 [submodule "vim/pack/def/start/editorconfig"]
 	path = vim/pack/def/start/editorconfig
 	url = https://github.com/editorconfig/editorconfig-vim.git
@@ -25,3 +22,6 @@
 [submodule "dot.tmux/plugins/tmux-sensible"]
 	path = dot.tmux/plugins/tmux-sensible
 	url = https://git::@github.com/tmux-plugins/tmux-sensible
+[submodule "dot.tmux/plugins/tmux-yank"]
+	path = dot.tmux/plugins/tmux-yank
+	url = https://git::@github.com/tmux-plugins/tmux-yank

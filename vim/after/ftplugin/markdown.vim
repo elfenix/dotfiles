@@ -1,0 +1,4 @@
+
+setlocal linebreak
+setlocal wrap
+
