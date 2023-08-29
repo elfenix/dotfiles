@@ -11,6 +11,7 @@ set visualbell
 set autoindent
 set backspace=indent,eol,start
 set smarttab
+set display=lastline
 set mouse=a
 
 

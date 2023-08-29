@@ -40,5 +40,8 @@ alias ls='ls --color=auto'
 # -----------------------------------------------------------------------------
 # My Actual Configuration Starts Here
 # -----------------------------------------------------------------------------
+
 export GPG_TTY=$TTY
+
+[[ ! -f ~/.zshrc.local ]] || source ~/.zshrc.local
 

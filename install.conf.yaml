@@ -11,6 +11,7 @@
     - ~/.fonts
 
 - link:
+    ~/.zprofile: zprofile
     ~/.zshrc: zshrc
     ~/.zsh_files: zsh_files
     ~/.p10k.zsh: p10k.zsh
